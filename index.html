@@ -7,7 +7,7 @@
     <title>Lokesh Krishna S | Developer & Machine Learning Enthusiast</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-theme">
 
     <header class="hero">
         <div class="container">
@@ -16,6 +16,11 @@
             <a href="#about" class="btn">Learn More</a>
         </div>
     </header>
+
+    <button class="theme-toggle-btn">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </button>
 
     <section class="about" id="about">
         <div class="container">
@@ -45,7 +50,17 @@
                 <p>This project focuses on anomaly detection in network traffic using K-Nearest Neighbors (KNN). By augmenting the data, I was able to improve the accuracy and robustness of the model in detecting abnormal patterns in network traffic. The solution can help in identifying potential threats and improving network security.</p>
                 <a href="https://github.com/yourgithubrepo" target="_blank">View on GitHub</a>
             </div>
-            <!-- You can add more projects here -->
+            <div class="project">
+                <img src="portfolio.jpg" alt="My Portfolio">
+                <h3>Portfolio Website - My Personal Web Development Showcase</h3>
+                <p>This portfolio website was developed using HTML and CSS to demonstrate my web development skills. It serves as a digital representation of my professional projects and showcases my expertise in designing and structuring responsive, user-friendly websites. The website is fully responsive and includes a clean design to highlight my technical expertise and passion for coding.</p>
+                <a href="#">View on GitHub</a>
+            </div>
+            <div class="project coming-soon">
+                <img src="coming_soon.jpg" alt="Coming Soon">
+                <h3>New Project - Coming Soon</h3>
+                <p>This project is currently in progress. Stay tuned for updates!</p>
+            </div>
         </div>
     </section>
 
@@ -53,7 +68,9 @@
         <div class="container">
             <h2>Contact Me</h2>
             <p>If you're interested in collaborating or have any questions, feel free to get in touch!</p>
-            <p>Email: <a href="mailto:lokeshkrishna.s668@gmail.com">lokeshkrishna.s668@gmail.com</a></p>
+            <p>Email: <a href="mailto:lokesh@example.com">lokesh@example.com</a></p>
+            <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a></p>
         </div>
     </section>
 
@@ -63,5 +80,14 @@
         </div>
     </footer>
 
+    <script>
+        const themeToggleBtn = document.querySelector('.theme-toggle-btn');
+        const body = document.body;
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('light-theme');
+            body.classList.toggle('dark-theme');
+        });
+    </script>
 </body>
 </html>
